@@ -10,11 +10,13 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 import br.com.empresas.erp.model.RamoAtividade;
+import jakarta.inject.Inject;
 
 public class RamoAtividades implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@Inject
 	private EntityManager manager;
 
 	public RamoAtividades() {

@@ -7,11 +7,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
 import br.com.empresas.erp.model.Empresa;
+import jakarta.inject.Inject;
 
 public class Empresas implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@Inject
 	private EntityManager manager;
 
 	public Empresas() {
